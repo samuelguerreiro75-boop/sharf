@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+/* FUNDO PARTICULAS */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* CARD PERFIL */
+.perfil {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.perfil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #15ff00;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.perfil h1 {
+  font-size: 22px;
+}
+
+.perfil p {
+  opacity: 0.8;
+  margin: 10px 0 20px;
+}
+
+.botoes a {
+  display: block;
+  text-decoration: none;
+  background: #15ff00;
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.botoes a:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+
+/* 📱 RESPONSIVO MOBILE */
+@media (max-width: 600px) {
+
+  .perfil {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .perfil img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .perfil h1 {
+    font-size: 18px;
+  }
+
+  .perfil p {
+    font-size: 13px;
+  }
+
+  .botoes a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
